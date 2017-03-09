@@ -1,0 +1,8 @@
+
+<h1>Listado Cuidadores</h1>
+
+<h3>Busqueda por nombre del cuidador: {{cuidador?.length}}</h3>
+<input class="search-bar" placeholder="Buscar" (keyup)="search(input.value)" #input>
+
+    <cuidador-list [cuidador]="filtro"></cuidador-list>
+

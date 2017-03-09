@@ -1,0 +1,8 @@
+<app-formulario-nuevo #form></app-formulario-nuevo>
+
+
+<table class="table lessons-list card card-strong">
+<tr >
+    <td colspan="2"><button [disabled]="!form.valid" (click)="save(form)">Guardar detalles</button></td>
+</tr>
+</table>

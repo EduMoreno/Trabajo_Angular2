@@ -1,0 +1,25 @@
+
+<table class="table lessons-list card card-strong" >
+    <tbody>
+
+    <tr style="background-color: black; color:white ">
+        <td colspan="2">Detalles</td>
+    </tr>
+
+    <tr *ngFor="let detalle of (detalles$ | async)" >
+        <td class="lessons-title">
+            <img class="lesson-logo"
+                 src="../src/favicon.ico">
+        </td>
+        <td>
+            {{detalle.descripcion}}
+        </td>
+
+
+    </tr>
+<tr><td  colspan="2" id="boton_nuevo">
+    <button routerLink="new" >Añadir detalle</button>
+</td></tr>
+    </tbody>
+</table>
+

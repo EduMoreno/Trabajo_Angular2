@@ -1,0 +1,21 @@
+<table class="table lessons-list card card-strong">
+  <tbody>
+
+  <tr style="background-color: black; color:white ">
+    <td >Nombre y Apellidos</td>
+    <td> DNI </td>
+    <td> Boton </td>
+  </tr>
+    <tr *ngFor="let cuidador of cuidador">
+      <td class="lesson-title"> {{cuidador.nombre}} {{cuidador.apellido}}</td>
+      <td class="duration">
+        <i class="md-icon duration-icon">library_books</i>
+        <span>{{cuidador.dni}}</span>
+      </td>
+      <td>
+        <button [routerLink]="cuidador.url">Detalles</button>
+
+      </td>
+    </tr>
+  </tbody>
+</table>

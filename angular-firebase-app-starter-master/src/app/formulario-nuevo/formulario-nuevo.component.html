@@ -1,0 +1,53 @@
+<form [formGroup]="form" autocomplete="off" novalidate class="lesson-form">
+
+  <table class="table lessons-list card card-strong">
+    <tr style="Background:Black; color:white;">
+    <td colspan="2"> Formulario</td>
+    </tr>
+
+    <tr>
+      <td> Id_cuidador </td>
+
+      <td>
+      <input name="title" formControlName="id_cuidador" placeholder="Id_cuidador">
+      <div class="field-error-message"
+           *ngIf="isErrorVisible('id_cuidador','required')">Este campo es necesario</div>
+      </td>
+
+    </tr>
+    <tr>
+      <td> Descripcion </td>
+    <td>
+      <input name="title" formControlName="descripcion" placeholder="Descripción">
+      <div class="field-error-message"
+           *ngIf="isErrorVisible('descripcion','required')">Este campo es necesario</div>
+      </td>
+    </tr>
+    <tr>
+      <td> Horas </td>
+      <td>
+      <input name="title" formControlName="horas" placeholder="Horas">
+      <div class="field-error-message"
+           *ngIf="isErrorVisible('horas','required')">Este campo es necesario</div>
+      </td>
+    </tr>
+    <tr>
+      <td> Animal </td>
+      <td>
+      <input name="title" formControlName="animal" placeholder="Animal">
+      <div class="field-error-message"
+           *ngIf="isErrorVisible('animal','required')">Este campo es necesario</div>
+
+      </td>
+    </tr>
+    <tr>
+      <td> Url </td>
+      <td>
+      <input name="title" formControlName="url" placeholder="Url">
+      <div class="field-error-message"
+           *ngIf="isErrorVisible('url','required')">Este campo es necesario</div>
+      </td>
+    </tr>
+
+  </table>
+</form>
